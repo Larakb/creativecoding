@@ -6,14 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projet Drag n Drop</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+    /* Style général pour le header */
+    header {
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+    }
+
+    /* Style du logo */
+    .logo {
+      font-size: 2.5em;
+      font-weight: bold;
+      font-family: sans-serif;
+      color: #333;
+      text-decoration: none;
+    }
+
+    /* Style du menu de navigation */
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      position: relative;
+      font-size: 1.5em;
+      font-family: sans-serif;
+      color: #333;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 5px 0;
+      transition: color 0.3s ease;
+      margin: 1.3rem;
+    }
+
+    /* Effet de hover souligné */
+    nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background-color: #000000;
+      transition: width 0.3s ease;
+
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    nav a:hover {
+      color: #000000;
+    }
+  </style>
 </head>
+<body>
+  <header>
+    <a href="#" class="logo">LARA'S MESS ❀.ᐟ</a>
+    <nav>
+      <a href="#about">ABOUT</a>
+      <a href="#projets">PROJECTS</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+  </header>
+
+</body>
+</html>
+</head>
+
 
 <body>
     <section id="s1">
-        <div class="carre draggable"></div>
-        <div class="carre2 draggable"></div>
-        <div class="carre3 draggable"></div>
+        <div class="file draggable"> <img class="draggable" src="Images/Icon.png" alt="" srcset=""></div>
+        <div class="file2 draggable"> <img class="draggable" src="Images/Icon 2.png" alt="" srcset=""></div>
+        <div class="file3 draggable"> <img class="draggable" src="Images/Icon 3.png" alt="" srcset=""></div>
+        <div class="file4 draggable"> <img class="draggable" src="Images/Poster.jpg" alt="" srcset=""></div
     </section>
+
+
 <section id="s2">
     
             <div class="div1"> <img class="draggable" src="Images/img1.jpeg" alt="" srcset=""></div>
